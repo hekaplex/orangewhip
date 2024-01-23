@@ -1,9 +1,10 @@
 # logic
 def orange_whip(guess, dudlist):    
 # dependencies
-    import copy
-    import collections
-    from english_words import english_words_lower_alpha_set
+import copy
+import collections
+from english_words import get_english_words_set
+english_words_lower_alpha_set = get_english_words_set(['web2'], lower=True, alpha=True)
 # figure out which letters to test
     alpha = {a for a in "abcdefghijklmnopqrstuvwxyz"}
     duds = {a for a in dudlist}
